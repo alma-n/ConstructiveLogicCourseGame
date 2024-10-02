@@ -11,5 +11,7 @@ World "Johdanto"
 Title "Johdanto formaaliin todistamiseen"
 
 Introduction "
-This introduction is shown before one enters level 1 of the demo world. Use markdown.
+Tämä maailma toimii johdantona logiikkaan ja formaaliin todistamiseen. Maailmassa opit muutaman Leanin tärkeimmän taktiikan, lukemaan Leanin notaatiota ja ymmärtämään miten Lean ajattelee askel askeleelta.
+
+Paina alhaalta Start → edetäksesi ensimmäiseen kenttään.
 "

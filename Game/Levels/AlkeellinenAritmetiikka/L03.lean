@@ -17,5 +17,3 @@ Statement : 3 = succ (succ (succ (0))) := by
 Conclusion "This last message appears if the level is solved."
 
 TacticDoc induction /- Indutio pälä pälä pölö pölö ... -/
-
-NewTactic induction

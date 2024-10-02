@@ -5,7 +5,7 @@ import Game.Levels.AlkeellinenAritmetiikka.L03
 
 
 World "Aritmetiikka"
-Title "Alkeellinen aritmetiikka"
+Title "Alkeellisen aritmetiikan maailma"
 
 Introduction "
 This introduction is shown before one enters level 1 of the demo world. Use markdown.
