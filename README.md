@@ -9,3 +9,6 @@ The documentation about how to use this template are at the [lean4game repositor
   * [Running a game locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)
 
 
+## URL
+
+http://localhost:3000/#/g/local/ConstructiveLogicCourseGame
