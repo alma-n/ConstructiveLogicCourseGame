@@ -7,6 +7,8 @@ import Game.Levels.DisjunktioJaKonjunktio
 import Game.Levels.Aritmetiikka
 import Game.Levels.Yhteenlasku
 import Game.Levels.Kertolasku
+import Game.Levels.Negaatio
+import Game.Levels.UniversaaliKvanttori
 
 -- Here's what we'll put on the title screen
 Title "Konsruktiivinen logiikka ja formaali todistaminen"
@@ -58,6 +60,8 @@ Dependency Johdanto → Peruslogiikka
 Dependency Peruslogiikka → Disjunktio
 Dependency Peruslogiikka → Konjunktio
 Dependency Peruslogiikka → Implikaatio
+Dependency Peruslogiikka → Negaatio
+Dependency Implikaatio → UniversaaliKvanttori
 Dependency Disjunktio → DisjunktioJaKonjunktio
 Dependency Konjunktio → DisjunktioJaKonjunktio
 Dependency Implikaatio → Aritmetiikka
