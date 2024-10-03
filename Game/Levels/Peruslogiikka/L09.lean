@@ -3,19 +3,17 @@ import Game.Metadata
 World "Peruslogiikka"
 Level 10
 
-Title "Konjunktio"
+Title "Socrates on mies ja Socrates on kuolevainen"
 
-Statement : (A ∧ B) ∧ C ↔ A ∧ (B ∧ C):= by
-  constructor
-  intro h
-  constructor
-  exact h.1.1
-  constructor
-  exact h.1.2
-  exact h.2
-  intro h
-  constructor
-  constructor
-  exact h.1
-  exact h.2.1
-  exact h.2.2
+Introduction "
+Kahden väitteen $P$ ja $Q$ **konjunktio** $P ∧ Q$ (luetaan 'P ja Q') tarkoittaa sitä, että molemmat väitteet $P$ ja $Q$ ovat totta.
+
+Leanissä todistus konjunktiosta voidaan luoda käyttämällä funktiota `And.intro`.
+
+Voit ratkaista tämän kentän käyttämällä `exact And.intro ___ ___` tai `apply And.intro` ja sulkemalla molemmat maalit käyttäen `exact`ia.
+"
+
+Statement (Socrates_is_man Socrates_is_mortal : Prop) (sman : Socrates_is_man) (smort : Socrates_is_mortal) : Socrates_is_man ∧ Socrates_is_mortal := by
+  exact And.intro sman smort
+
+NewTheorem And.intro

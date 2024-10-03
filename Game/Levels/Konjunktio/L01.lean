@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Konjunktio"
-Level 1
+Level 2
 
 Title "Määritelmä"
 

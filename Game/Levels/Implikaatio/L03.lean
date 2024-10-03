@@ -5,6 +5,6 @@ Level 4
 
 Title "SER"
 
-Statement (hab : A → B) (hbc : B → C) : A → C := by
-  intro a
-  exact hbc (hab a)
+Statement : (A → B → C) → (B → A → C) := by
+  intro h b a
+  exact h a b

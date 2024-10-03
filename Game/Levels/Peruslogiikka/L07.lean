@@ -3,15 +3,14 @@ import Game.Metadata
 World "Peruslogiikka"
 Level 8
 
-Title "Konjunktio"
+Title "Socrates on kilpikonna 3"
 
-Statement : A ∧ A ↔ A := by
-  constructor
-  intro h
-  exact h.1
-  intro a
-  constructor
-  exact a
-  exact a
+Introduction "
+Tässä kentässä harjoitellaan todistamaan mitä tahansa, kun oletuksissa on ristiriita käyttämällä `contradiction`-taktiikkaa.
+"
 
-NewTactic constructor
+Statement (Socrates_is_turtle : Prop) (h : 4 = 5) : Socrates_is_turtle := by
+  Hint "`contradiction`-taktiikka todistaa mitä tahansa kunhan oletuksissa on selvästi ristiriita"
+  contradiction
+
+NewTactic contradiction

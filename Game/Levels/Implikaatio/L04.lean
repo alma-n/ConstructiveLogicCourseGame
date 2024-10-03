@@ -5,9 +5,8 @@ Level 5
 
 Title "SER"
 
-Statement (hlx : L → X) (hey : E → Y) (haw : A → W) (hn : X → Y → W → N) : L → E → A → N := by
-  intro l e a
-  apply hn
-  exact hlx l
-  exact hey e
-  exact haw a
+Statement : (A → B) → (B → C) → A → C := by
+  intro hab hbc a
+  exact hbc (hab a)
+
+NewTheorem Function.comp

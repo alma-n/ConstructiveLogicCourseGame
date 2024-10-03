@@ -5,7 +5,7 @@ import Game.Levels.Kertolasku.L03
 import Game.Levels.Kertolasku.L04
 
 World "Kertolasku"
-Title "Kertolaskumaailma"
+Title "× maailma"
 
 Introduction "
 This introduction is shown before one enters level 1 of the demo world. Use markdown.

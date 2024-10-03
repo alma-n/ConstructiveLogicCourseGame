@@ -1,7 +1,7 @@
 import Game.Metadata
 import Mathlib
 
-World "Peruslogiikka"
+World "DisjunktioJaKonjunktio"
 Level 14
 
 Title "Disjunktio ∧ konjunktio"

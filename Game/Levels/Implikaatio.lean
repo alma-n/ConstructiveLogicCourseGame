@@ -6,7 +6,7 @@ import Game.Levels.Implikaatio.L04
 
 
 World "Implikaatio"
-Title "Implikaatiomaailma"
+Title "→ maailma"
 
 Introduction "
 This introduction is shown before one enters level 1 of the demo world. Use markdown.

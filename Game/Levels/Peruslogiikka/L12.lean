@@ -1,32 +1,15 @@
 import Game.Metadata
-import Mathlib
 
 World "Peruslogiikka"
 Level 13
 
-Title "Disjunktio"
+Title "Socrates on mies ↔ Socrates on mies"
 
-Statement : (A ∨ B) ∨ C ↔ A ∨ (B ∨ C) := by
-  constructor
-  intro h
-  cases' h with ab c
-  cases' ab with a b
-  left
-  exact a
-  right
-  left
-  exact b
-  right
-  right
-  exact c
-  intro h
-  cases' h with a bc
-  left
-  left
-  exact a
-  cases' bc with b c
-  left
-  right
-  exact b
-  right
-  exact c
+Introduction "
+Kun kahden väitteen $P$ ja $Q$ välillä on looginen implikaatio molempiin suuntiin, eli $P → Q$ ja $Q → P$, sanotaan että $P$ _jos ja vain jos_ $Q$.
+
+'Jos ja vain jos' merkitään $\\leftrightarrow$-merkillä, esim. $P \\leftrightarrow Q$
+"
+
+Statement (Socrates_is_man : Prop) : Socrates_is_man ↔ Socrates_is_man := by
+  sorry

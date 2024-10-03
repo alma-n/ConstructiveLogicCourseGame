@@ -1,6 +1,14 @@
 = Peli-ideat
 
-== Logiikkamaailma
+== Johdanto logiikkaan maailma
+
+- Jos ja vain jos
+
+- True <-> 5 = 5
+- False <-> 4 = 5
+
+- (h1 : 5 = 5 \r 4 = 5)
+- True \r False
 
 == Universaalimaailma
 

@@ -1,19 +1,17 @@
 import Game.Metadata
-import Mathlib
 
 World "Peruslogiikka"
 Level 11
 
-Title "Disjunktio"
+Title "Socrates on mies ja Socrates on kuolevainen 2"
 
-Statement : A ∨ A ↔ A := by
-  constructor
-  intro h
-  cases' h with a a
-  exact a
-  exact a
-  intro a
-  left
-  exact a
+Introduction "
+Tämä on sama kuin edellinen tehtävä, mutta tällä kertaa käytämme `constructor`-taktiikkaa `And.intro`:n sijaan.
+"
 
-NewTactic left right cases
+Statement (Socrates_is_man Socrates_is_mortal : Prop) (sman : Socrates_is_man) (smort : Socrates_is_mortal) : Socrates_is_man ∧ Socrates_is_mortal := by
+  exact And.intro sman smort
+
+NewTactic constructor
+
+DisabledTheorem And.intro

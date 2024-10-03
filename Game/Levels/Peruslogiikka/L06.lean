@@ -3,10 +3,20 @@ import Game.Metadata
 World "Peruslogiikka"
 Level 7
 
-Title "Saastuneet oletukset"
+Title "Socrates on kilpikonna 2"
 
-Statement (hf : False) : True → False := by
-  intro _h
-  exact hf
+Introduction "
+Tässä kentässä harjoitellaan todistamaan mitä tahansa, kun oletuksissa on ristiriita käyttämällä `exfalso`-taktiikkaa. `exfalso`-taktiikka muuttaa minkä tahansa maalin `False`:ksi.
 
-Conclusion "Pystyimme tässä tasossa näennäisesti 'todistamaan' jotakin, minkä tiedämme vääräksi edellisen tason perusteella. Miksi? Selkeästi siksi, että oletuksistamme löytyi oletus 'False'. Tämä taso havainnollistaa hyvin, kuinka tärkeä konsistentti pohja on matematiikkaa tehdessä"
+[Ex falso quodlibet](https://en.wikipedia.org/wiki/Principle_of_explosion)
+"
+
+Statement (Socrates_is_turtle : Prop) (h : ¬Socrates_is_turtle) : Socrates_is_turtle → 4 = 5 := by
+  Hint "Aloita olettamalla, että Socrates on kilpikonna"
+  intro hs
+  Hint "Koska oletuksissa on nyt ristiriita voimme todistaa mitä tahansa Ex falso quodlibet"
+  exfalso
+  Hint "`h : ¬Socrates_is_turtle` on funktio `Socrates_is_turtle → False`, joten `apply h` muuttaa maalin tyypiksi `Socrates_is_turtle`"
+  apply h
+  Hint "`Socrates_is_turtle` löytyykin oletuksista"
+  exact hs

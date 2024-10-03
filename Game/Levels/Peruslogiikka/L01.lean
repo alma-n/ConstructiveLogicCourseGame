@@ -3,9 +3,16 @@ import Game.Metadata
 World "Peruslogiikka"
 Level 2
 
-Title "Tosi on triviaalisti tosi"
+Title "Totuudesta seuraa tosia asioita"
 
-Statement : True := by
-  trivial
+Introduction "
+... tai oikeastaan mistä tahansa seuraa tosia asioita.
+"
+
+Statement : True → True := by
+  Hint "Aloita olettamalla implikaation vasen puoli (`intro`)"
+  intro h
+  Hint "Jäljelle jää todistaa `True`, joka löytyy oletuksista"
+  exact h
 
 NewTactic exact

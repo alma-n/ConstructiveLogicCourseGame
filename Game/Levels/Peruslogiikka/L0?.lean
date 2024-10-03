@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib
 
 World "Peruslogiikka"
 Level 10
@@ -11,8 +10,8 @@ Statement : ¬ ∀ A B, A ∧ (B → A) → B := by
   have gona := h True False
   apply gona
   constructor
-  trivial
+  exact trivial
   intro _f
-  trivial
+  exact trivial
 
 Conclusion "Tehtävä havainnollistaa hyvin yleistä loogista virhettä, jossa sekoitetaan 'jos' sekä 'jos ja vain jos' keskenään."
