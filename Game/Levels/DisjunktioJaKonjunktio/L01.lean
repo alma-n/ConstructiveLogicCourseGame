@@ -1,5 +1,5 @@
 import Game.Metadata
-import Mathlib
+
 
 World "DisjunktioJaKonjunktio"
 Level 2
@@ -9,19 +9,19 @@ Title "Disjunktio ∧ konjunktio"
 Statement : A ∧ (B ∨ C) ↔ (A ∧ B) ∨ (A ∧ C) := by
   constructor
   intro h
-  cases' h with a bc
-  cases' bc with b c
+  cases h
+  cases right
   left
-  exact And.intro a b
+  exact And.intro left h
   right
-  exact And.intro a c
+  exact And.intro left h
   intro h
-  cases' h with ab ac
+  cases h
   constructor
-  exact ab.1
+  exact h_1.1
   left
-  exact ab.2
+  exact h_1.2
   constructor
-  exact ac.1
+  exact h_1.1
   right
-  exact ac.2
+  exact h_1.2

@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib
 
 World "Disjunktio"
 Level 4
@@ -9,24 +8,24 @@ Title "Disjunktio 3"
 Statement : (A ∨ B) ∨ C ↔ A ∨ (B ∨ C) := by
   constructor
   intro h
-  cases' h with ab c
-  cases' ab with a b
+  cases h
+  cases h_1
   left
-  exact a
+  exact h
   right
   left
-  exact b
+  exact h
   right
   right
-  exact c
+  exact h_1
   intro h
-  cases' h with a bc
+  cases h
   left
   left
-  exact a
-  cases' bc with b c
+  exact h_1
+  cases h_1
   left
   right
-  exact b
+  exact h
   right
-  exact c
+  exact h
