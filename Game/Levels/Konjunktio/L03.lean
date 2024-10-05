@@ -1,9 +1,9 @@
 import Game.Metadata
 
-World "Peruslogiikka"
-Level 9
+World "Konjunktio"
+Level 4
 
-Title "Konjunktio"
+Title "Konjunktio 3"
 
 Statement : A ∧ B ↔ B ∧ A := by
   constructor

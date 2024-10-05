@@ -5,6 +5,8 @@ Level 1
 
 Title "Hieno otsikko"
 
+namespace MyNat
+
 Introduction "This text is shown as first message when the level is played.
 You can insert hints in the proof below. They will appear in this side panel
 depending on the proof a user provides."

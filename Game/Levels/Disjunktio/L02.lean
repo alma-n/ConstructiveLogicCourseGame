@@ -1,10 +1,10 @@
 import Game.Metadata
 import Mathlib
 
-World "DisjunktioJaKonjunktio"
-Level 12
+World "Disjunktio"
+Level 3
 
-Title "Disjunktio"
+Title "Disjunktio 2"
 
 Statement : A ∨ B ↔ B ∨ A := by
   constructor

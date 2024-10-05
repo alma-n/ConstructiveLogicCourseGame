@@ -3,13 +3,11 @@ import Game.Metadata
 World "Negaatio"
 Level 2
 
-Title "Epätodesta voidaan todistaa mitä tahansa"
+Title "Epätodesta voidaan todistaa epätosi"
 
 Introduction ""
 
-Statement (socrates_syo_kenkia : Prop) : False → socrates_syo_kenkia := by
-  intro f
-  exfalso
+Statement (f : False) : False := by
   exact f
 
-NewTactic exfalso
+Conclusion "Myös epätotuudet voidaan siis todistaa, mikäli kontekstista löytyy epätotuus."

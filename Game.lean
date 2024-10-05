@@ -4,13 +4,14 @@ import Game.Levels.Implikaatio
 import Game.Levels.Disjunktio
 import Game.Levels.Konjunktio
 import Game.Levels.DisjunktioJaKonjunktio
-import Game.Levels.Aritmetiikka
-import Game.Levels.Yhteenlasku
-import Game.Levels.Kertolasku
+-- import Game.Levels.Aritmetiikka
+-- import Game.Levels.Yhteenlasku
+-- import Game.Levels.Kertolasku
 import Game.Levels.Negaatio
 import Game.Levels.UniversaaliKvanttori
+import Game.Levels.Ekvivalenssi
+import Game.Levels.Funktio
 
--- Here's what we'll put on the title screen
 Title "Konsruktiivinen logiikka ja formaali todistaminen"
 Introduction
 "
@@ -57,16 +58,15 @@ CaptionLong "You should use this game as a template for your own game and add yo
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 Dependency Johdanto → Peruslogiikka
-Dependency Peruslogiikka → Disjunktio
-Dependency Peruslogiikka → Konjunktio
 Dependency Peruslogiikka → Implikaatio
 Dependency Peruslogiikka → Negaatio
-Dependency Implikaatio → UniversaaliKvanttori
+Dependency Peruslogiikka → Ekvivalenssi
+Dependency Ekvivalenssi → Konjunktio
+Dependency Ekvivalenssi → Disjunktio
 Dependency Disjunktio → DisjunktioJaKonjunktio
 Dependency Konjunktio → DisjunktioJaKonjunktio
-Dependency Implikaatio → Aritmetiikka
-Dependency Aritmetiikka → Yhteenlasku
-Dependency Aritmetiikka → Kertolasku
+Dependency Implikaatio → UniversaaliKvanttori
+Dependency Implikaatio → Funktio
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

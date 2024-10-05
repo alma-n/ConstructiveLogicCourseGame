@@ -3,8 +3,8 @@ import Game.Metadata
 World "Implikaatio"
 Level 3
 
-Title "SER"
+Title "Implikaatio 2"
 
-Statement : (B → A) → B → A := by
-  intro h b
-  exact h b
+Statement (A B : Prop) : A → B → A := by
+  intro a _b
+  exact a

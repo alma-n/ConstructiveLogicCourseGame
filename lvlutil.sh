@@ -19,7 +19,7 @@ Actions:
 
 create          Creates a new level in world WORLD_NAME
 renumber        Renumbers the levels in world WORLD_NAME according to their filename
-disable         Disables a level (removes it from the import)
+disable         Disables or enables a level (removes it from the import)
 EOF
   exit
 }
@@ -92,8 +92,7 @@ create() {
   fi
   level_name="L$(twodigit $(( ${final_level_num} ))).lean"
 
-  default_level='
-import Game.Metadata
+  default_level='import Game.Metadata
 
 World "'${world_name}'"
 Level '$(( ${final_level_num} + 1 ))'

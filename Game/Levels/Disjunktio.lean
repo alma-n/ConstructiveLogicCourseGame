@@ -1,4 +1,11 @@
 import Game.Levels.Disjunktio.L00
+import Game.Levels.Disjunktio.L01
+import Game.Levels.Disjunktio.L02
+import Game.Levels.Disjunktio.L03
+import Game.Levels.Disjunktio.L04
+import Game.Levels.Disjunktio.L05
+import Game.Levels.Disjunktio.L06
+import Game.Levels.Disjunktio.L07
 
 
 World "Disjunktio"

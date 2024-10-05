@@ -3,7 +3,7 @@ import Game.Metadata
 World "Konjunktio"
 Level 1
 
-Title "Määritelmä"
+Title "Konjunktio 0"
 
 Introduction "
 $(A ∧ B) ∧ C ∧ D$ on sama kuin $(A ∧ B) ∧ (C ∧ D)$

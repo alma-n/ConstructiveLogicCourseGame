@@ -4,8 +4,8 @@ import Game.Levels.Johdanto.L02
 import Game.Levels.Johdanto.L03
 import Game.Levels.Johdanto.L04
 import Game.Levels.Johdanto.L05
-import Game.Levels.Johdanto.L06
-import Game.Levels.Johdanto.L07
+-- import Game.Levels.Johdanto.L06
+-- import Game.Levels.Johdanto.L07
 
 World "Johdanto"
 Title "Johdanto formaaliin todistamiseen"

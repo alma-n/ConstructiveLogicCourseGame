@@ -1,5 +1,7 @@
 import Game.Metadata
 
+open Nat
+
 World "Kertolasku"
 Level 2
 
@@ -8,8 +10,9 @@ Title "n * 0 on 0"
 Introduction "Tämän tason tehtävänä on osoittaa, että n * 0 = 0."
 
 Statement (n : Nat) : n * 0 = 0 := by
-  Hint "Huomaa, että käyttöösi on ilmestynyt taktiikka Nat.mul_zero. Mitäköhän se mahtaa todistaa?"
-  apply Nat.mul_zero
+  induction n
+  rw [Nat.zero_mul]
+  rw [succ_mul, Nat.add_zero, n_ih]
 
 Conclusion "Hienoa!"
 
@@ -18,4 +21,6 @@ Conclusion "Hienoa!"
 -- NewLemma Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
 
-NewTheorem Nat.mul_zero
+NewTactic induction
+
+NewTactic Nat.add_zero

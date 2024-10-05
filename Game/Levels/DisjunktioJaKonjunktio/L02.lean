@@ -2,7 +2,7 @@ import Game.Metadata
 import Mathlib
 
 World "DisjunktioJaKonjunktio"
-Level 15
+Level 3
 
 Title "Disjunktio ∧ konjunktio"
 

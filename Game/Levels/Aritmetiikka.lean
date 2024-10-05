@@ -2,6 +2,7 @@ import Game.Levels.AlkeellinenAritmetiikka.L00
 import Game.Levels.AlkeellinenAritmetiikka.L01
 import Game.Levels.AlkeellinenAritmetiikka.L02
 import Game.Levels.AlkeellinenAritmetiikka.L03
+import Game.Levels.AlkeellinenAritmetiikka.L04
 
 
 World "Aritmetiikka"

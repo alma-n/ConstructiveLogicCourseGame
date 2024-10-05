@@ -15,4 +15,3 @@ Statement : True → True := by
   Hint "Jäljelle jää todistaa `True`, joka löytyy oletuksista"
   exact h
 
-NewTactic exact

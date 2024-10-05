@@ -11,7 +11,7 @@ depending on the proof a user provides."
 
 open Nat
 
-Statement : 3 = succ (succ (succ (0))) := by
+Statement : 1 = succ 0 := by
   rfl
 
 Conclusion "This last message appears if the level is solved."

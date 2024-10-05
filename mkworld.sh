@@ -74,8 +74,7 @@ setup_colors
 # script logic here
 world_name=${args[0]}
 
-default_level='
-import Game.Metadata
+default_level='import Game.Metadata
 
 World "'${world_name}'"
 Level 1
@@ -87,8 +86,7 @@ Statement : A → A := by
   exact a
 '
 
-default_module_file='
-import Game.Levels.'${world_name}'.L00
+default_module_file='import Game.Levels.'${world_name}'.L00
 
 World "'${world_name}'"
 Title "Title"

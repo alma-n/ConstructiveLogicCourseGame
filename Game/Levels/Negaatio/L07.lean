@@ -3,14 +3,14 @@ import Game.Metadata
 World "Negaatio"
 Level 8
 
-Title ""
+Title "Usean negaation yksinkertaistus"
 
 Introduction ""
 
-Statement (P Q : Prop) (h : ¬(P → Q)) : ¬¬ P := by
-  intro np
-  apply h
+Statement (P : Prop) (h : ¬¬¬P) : ¬P := by
   intro p
-  exfalso
+  apply h
+  intro np
   apply np
   exact p
+

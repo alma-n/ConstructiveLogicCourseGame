@@ -1,9 +1,9 @@
 import Game.Metadata
 
-World "Peruslogiikka"
-Level 8
+World "Konjunktio"
+Level 3
 
-Title "Konjunktio"
+Title "Konjunktio 2"
 
 Statement : A ∧ A ↔ A := by
   constructor
@@ -13,5 +13,3 @@ Statement : A ∧ A ↔ A := by
   constructor
   exact a
   exact a
-
-NewTactic constructor

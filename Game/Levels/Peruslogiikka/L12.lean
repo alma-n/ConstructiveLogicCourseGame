@@ -1,15 +1,21 @@
+
 import Game.Metadata
 
 World "Peruslogiikka"
 Level 13
 
-Title "Socrates on mies ↔ Socrates on mies"
+Title "Socrates on ihminen, tai Socrates on kilpikonna"
 
 Introduction "
-Kun kahden väitteen $P$ ja $Q$ välillä on looginen implikaatio molempiin suuntiin, eli $P → Q$ ja $Q → P$, sanotaan että $P$ _jos ja vain jos_ $Q$.
+Kahden väitteen $P$ ja $Q$ **disjunktio** $P ∧ Q$ (luetaan 'P tai Q') tarkoittaa sitä, että ainakin toinen väitteistä $P$ ja $Q$ on totta.
 
-'Jos ja vain jos' merkitään $\\leftrightarrow$-merkillä, esim. $P \\leftrightarrow Q$
+Leanissä todistus disjunktiosta voidaan tehdään valitsemalla todistettava puoli lauseesta käyttämällä **left**- tai **right**-taktiikkaa.
+
+Kannattaa valita tarkasti, koska toinen puoli lauseesta ei väistämättä ole todistettavissa.
 "
 
-Statement (Socrates_is_man : Prop) : Socrates_is_man ↔ Socrates_is_man := by
-  sorry
+Statement (Socrates_is_human Socrates_is_turtle: Prop) (h : Socrates_is_human): Socrates_is_human ∨ Socrates_is_turtle := by
+  left
+  exact h
+
+NewTactic left right

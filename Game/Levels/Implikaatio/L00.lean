@@ -3,9 +3,8 @@ import Game.Metadata
 World "Implikaatio"
 Level 1
 
-Title "SER"
+Title "Implikaatio 0"
 
-Statement : A → A := by
+Statement (A : Prop) : A → A := by
   intro a
   exact a
-

@@ -1,4 +1,6 @@
 import Game.Levels.DisjunktioJaKonjunktio.L00
+import Game.Levels.DisjunktioJaKonjunktio.L01
+import Game.Levels.DisjunktioJaKonjunktio.L02
 
 
 World "DisjunktioJaKonjunktio"

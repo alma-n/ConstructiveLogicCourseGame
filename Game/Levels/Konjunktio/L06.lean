@@ -1,10 +1,10 @@
+
 import Game.Metadata
-import Mathlib
 
-World "DisjunktioJaKonjunktio"
-Level 16
+World "Konjunktio"
+Level 7
 
-Title "Disjunktio ∧ konjunktio"
+Title "Konjunktio 6"
 
 Statement (h : (A ∧ B ∧ C ∧ (D ∧ (E ∧ F)) ∧ G ∧ H ∧ I) ∧ J ∧ (K ∧ L ∧ M ∧ N ∧ (O ∧ P) ∧ Q) ∧ R ∧ (S ∧ T ∧ (U ∧ V)) ∧ ((W ∧ X) ∧ Y) ∧ Z) : L ∧ E ∧ A ∧ N := by
   constructor

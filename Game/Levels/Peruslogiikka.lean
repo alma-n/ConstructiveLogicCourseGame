@@ -9,6 +9,10 @@ import Game.Levels.Peruslogiikka.L07
 import Game.Levels.Peruslogiikka.L08
 import Game.Levels.Peruslogiikka.L09
 import Game.Levels.Peruslogiikka.L10
+import Game.Levels.Peruslogiikka.L11
+import Game.Levels.Peruslogiikka.L12
+import Game.Levels.Peruslogiikka.L13
+import Game.Levels.Peruslogiikka.L14
 
 World "Peruslogiikka"
 Title "Logiikan perusteet"
