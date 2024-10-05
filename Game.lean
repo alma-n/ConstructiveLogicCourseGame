@@ -9,6 +9,7 @@ import Game.Levels.DisjunktioJaKonjunktio
 -- import Game.Levels.Kertolasku
 import Game.Levels.Negaatio
 import Game.Levels.UniversaaliKvanttori
+import Game.Levels.EksistenssiKvanttori
 import Game.Levels.Ekvivalenssi
 import Game.Levels.Funktio
 
@@ -66,6 +67,7 @@ Dependency Ekvivalenssi → Disjunktio
 Dependency Disjunktio → DisjunktioJaKonjunktio
 Dependency Konjunktio → DisjunktioJaKonjunktio
 Dependency Implikaatio → UniversaaliKvanttori
+Dependency Implikaatio → EksistenssiKvanttori
 Dependency Implikaatio → Funktio
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/

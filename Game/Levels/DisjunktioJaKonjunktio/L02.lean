@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib
 
 World "DisjunktioJaKonjunktio"
 Level 3
