@@ -3,11 +3,12 @@ import Game.Metadata
 World "Negaatio"
 Level 6
 
-Title "Itseristiriita"
+Title "Negaatio 6"
 
 Introduction ""
 
-Statement (P : Prop) (h : P → ¬ P) : ¬P := by
-  intro p
-  apply h p
-  exact p
+Statement (P Q : Prop) (h : ¬(P → Q)) : ¬Q := by
+  intro q
+  apply h
+  intro _p
+  exact q

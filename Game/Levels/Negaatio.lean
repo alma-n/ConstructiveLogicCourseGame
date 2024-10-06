@@ -7,8 +7,6 @@ import Game.Levels.Negaatio.L05
 import Game.Levels.Negaatio.L06
 import Game.Levels.Negaatio.L07
 import Game.Levels.Negaatio.L08
-import Game.Levels.Negaatio.L09
-
 
 World "Negaatio"
 Title "¬ maailma"

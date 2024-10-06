@@ -4,7 +4,6 @@ import Game.Levels.Konjunktio.L02
 import Game.Levels.Konjunktio.L03
 import Game.Levels.Konjunktio.L04
 import Game.Levels.Konjunktio.L05
-import Game.Levels.Konjunktio.L06
 
 
 World "Konjunktio"

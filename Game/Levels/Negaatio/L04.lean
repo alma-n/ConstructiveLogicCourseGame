@@ -3,11 +3,11 @@ import Game.Metadata
 World "Negaatio"
 Level 5
 
-Title "Modus Tollens"
+Title "Itseristiriita"
 
 Introduction ""
 
-Statement (P Q : Prop) (h : P → Q) (nq : ¬ Q) : ¬P := by
+Statement (P : Prop) (h : P → ¬ P) : ¬P := by
   intro p
-  apply nq
-  exact h p
+  apply h p
+  exact p

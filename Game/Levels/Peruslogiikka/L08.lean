@@ -13,7 +13,7 @@ Statement (Socrates_is_turtle : Prop) : ¬Socrates_is_turtle → 2 = 1 + 1 → 4
   intro _h1 _h2 h3
   contradiction
 
--- Statement (Socrates_is_turtle : Prop) (Socrates_is_man : Prop) (h : ¬(Socrates_is_turtle ∧ Socrates_is_man)) : Socrates_is_turtle → Socrates_is_man → 4 = 5 := by
+-- Statement (Socrates_is_turtle : Prop) (Socrates_is_human : Prop) (h : ¬(Socrates_is_turtle ∧ Socrates_is_human)) : Socrates_is_turtle → Socrates_is_human → 4 = 5 := by
 --   intro sk
 --   intro sm
 --   exfalso

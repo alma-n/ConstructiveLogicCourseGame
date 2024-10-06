@@ -4,7 +4,7 @@ import Game.Metadata
 World "Ekvivalenssi"
 Level 2
 
-Title "Socrates on mies ↔ Socrates on mies 2"
+Title "Socrates on ihminen ↔ Socrates on ihminen 2"
 
 Introduction "
 Looginen ekvivalenssi, eli 'jos ja vain jos' voidaan todistaa antamalla todistukset sekä 'jos' ja 'vain jos' suunnista.

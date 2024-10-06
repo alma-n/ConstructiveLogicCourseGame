@@ -3,12 +3,14 @@ import Game.Metadata
 World "Negaatio"
 Level 7
 
-Title "Negaatio 6"
+Title "Usean negaation yksinkertaistus"
 
 Introduction ""
 
-Statement (P Q : Prop) (h : ¬(P → Q)) : ¬Q := by
-  intro q
+Statement (P : Prop) (h : ¬¬¬P) : ¬P := by
+  intro p
   apply h
-  intro _p
-  exact q
+  intro np
+  apply np
+  exact p
+

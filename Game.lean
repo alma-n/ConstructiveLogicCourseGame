@@ -27,7 +27,8 @@ Tästä alkaa matkasi logiikan, aritmetiikan ja formaalin todistamisen laajaan u
 Haluan antaa hieman ohjeita matkallesi:
 
 1. Näytön oikeasta reunasta löydät käytössäsi olevat työkalut. Ne on jaettu kolmeen kategoriaan: taktiikat, määritelmät ja lauseet. Saat dokumentaation auki klikkaamalla niistä. Ne joiden vieressä on lukko ovat vielä lukittuja, eli niitä ei saa käyttää todistuksessa.
-2. Universumin kartta
+2. Universumin kartta kertoo missä menet tällä hetkellä. Kartassa voi siirtyä eteenpäin voin sellaisiin maailmoihin ja tasoihin, joiden vaatimukset on ratkaistu.
+3. Kannattaa lukea kaikki ohjeet mitä tasoissa annetaan. Jotkut identtiseltä vaikuttavat tasot on tarkoitettu ratkaistavaksi eri työkaluilla, jotta oppisit mahdollisimman paljon Leanin työkaluja.
 
 ## Kiireisille seikkailijoille
 
